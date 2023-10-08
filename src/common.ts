@@ -128,3 +128,8 @@ export function pkgFromUserAgent(userAgent: string | undefined) {
     version: pkgSpecArr[1],
   };
 }
+
+export interface TemplateOptions {
+  projectName: string;
+  framework: string;
+}

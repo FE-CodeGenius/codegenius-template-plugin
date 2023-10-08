@@ -2,18 +2,13 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import type { CAC } from "cac";
-import {
-  ACTIVATION,
-  fileIgnore,
-  FRAMEWORKS,
-  loggerInfo,
-  TemplateOptions,
-} from "code-genius";
+import { ACTIVATION, fileIgnore, loggerInfo } from "code-genius";
 import enquirer from "enquirer";
 import fs from "fs-extra";
 
 import {
   emptyDir,
+  FRAMEWORKS,
   generateRandom,
   getVariantByFramework,
   isEmptyDir,
@@ -21,6 +16,7 @@ import {
   isValidPackageName,
   isValidVariant,
   pkgFromUserAgent,
+  TemplateOptions,
   toValidPackageName,
 } from "./common";
 
