@@ -4,6 +4,25 @@
 
 使用场景: 用于创建青睐 **CodeGenius** 模板的新的项目 (目前模板为 `vitejs` 内置, 主要在模拟功能, 模板后续更新后可用).
 
+## 安装
+
+``` bash
+npm i @codegenius/template-plugin -D
+```
+
+```javascript
+import { defineConfig } from "code-genius";
+import { templateInstaller } from "@codegenius/template-plugin";
+
+export default defineConfig({
+  plugins: [
+    templateInstaller(),
+  ],
+});
+```
+
+## 使用
+
 ### 询问模式
 
 ```bash

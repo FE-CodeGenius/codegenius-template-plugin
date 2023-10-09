@@ -133,3 +133,5 @@ export interface TemplateOptions {
   projectName: string;
   framework: string;
 }
+
+export const fileIgnore = ["package.json", "_gitignore"];

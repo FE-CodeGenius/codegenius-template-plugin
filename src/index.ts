@@ -2,12 +2,13 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import type { CAC } from "cac";
-import { ACTIVATION, fileIgnore, loggerInfo } from "code-genius";
+import { ACTIVATION, loggerInfo } from "code-genius";
 import enquirer from "enquirer";
 import fs from "fs-extra";
 
 import {
   emptyDir,
+  fileIgnore,
   FRAMEWORKS,
   generateRandom,
   getVariantByFramework,
