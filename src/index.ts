@@ -145,7 +145,9 @@ const template = async (options: TemplateOptions) => {
 
 const templateInstaller = () => {
   return {
-    name: "templateInstaller",
+    name: "template",
+    describe: "运行 cg 生成 CodeGenius 内置模板项目",
+    command: "template",
     setup: (cli: CAC) => {
       cli
         .command("template", "运行 cg 生成 CodeGenius 内置模板项目")
